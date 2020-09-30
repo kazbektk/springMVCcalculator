@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<form action="calculate">
+    <label for="a">type number a:</label>
+    <input name="a" type="number" id="a">
+    <label for="b">type number b:</label>
+    <input name="b" type="number" id="b">
+    <select name="action">
+        <option>multiplication</option>
+        <option>addition</option>
+        <option>subtraction</option>
+        <option>division</option>
+    </select>
+    <input type="submit" value="send">
+</form>
+
+<p th:text="${result}" />
+
+
+<p><a href="hello">Say hello</a></p>
+<p><a href="goodbye">Say goodbye</a></p>
+<p><a href="../exit">exit</a></p>
+
+</body>
+</html>
